@@ -1,0 +1,35 @@
+/* Основний заголовок */
+.main-title {
+   font-family: 'EB Garamond';
+   font-size: 3.4286rem;
+   line-height: 1.2;
+}
+.main-title_white {
+   color: #fff;
+}
+
+/* Звичайний заголовок */
+.title {
+   color: #383230;
+   font-family: 'EB Garamond';
+   font-size: 2rem;
+   line-height: 135.714286%;
+   letter-spacing: 0.8px;
+}
+.title_black {
+   color: #000;
+}
+
+/* Великі заголовки та тексти */
+.big-title {
+   font-family: 'EB Garamond';
+   font-size: 2.4286rem;
+   line-height: 140%;
+   letter-spacing: 2px;
+}
+
+/* Підзаголовки */
+.subtitle {
+   color: #817a70;
+   text-transform: uppercase;
+}
