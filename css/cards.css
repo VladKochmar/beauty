@@ -1,0 +1,117 @@
+.card {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+.card__header {
+   display: grid;
+   position: relative;
+}
+.card__image-ibg {
+   position: relative;
+   padding-top: 100%;
+}
+.card__image-ibg img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+.card__type {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   z-index: 2;
+   font-size: 0.8571rem;
+   text-transform: uppercase;
+   padding: 1px 6px 5px;
+   color: #fff;
+   background-color: #817a70;
+}
+.card__type_white {
+   color: #000;
+   background-color: #fff;
+}
+.card__button {
+   position: absolute;
+   width: 86.842105%;
+   bottom: 0;
+   left: 50%;
+   font-size: 0.8571rem;
+   display: flex;
+   gap: 0.7143rem;
+   align-items: center;
+   justify-content: center;
+   background-color: #fff;
+   border: 1px solid #000;
+   transform: translate(-50%, 0);
+   padding: 9px 5px;
+}
+._icon-arrows::before {
+   font-size: 1.1429rem;
+}
+.card__body {
+   flex: 1 1 100%;
+   padding: 1.0714rem 1.0714rem 1.4286rem;
+   background-color: #fff;
+   border: 1px solid #e0dbd2;
+}
+.card__title {
+   display: inline-block;
+   font-family: 'EB Garamond';
+   color: #383230;
+   line-height: 1.3;
+   letter-spacing: 0.4px;
+}
+.card__title:not(:last-child) {
+   margin-bottom: 0.3571rem;
+}
+.card__subtitle {
+   color: #8c8c8c;
+   font-size: 0.8571rem;
+}
+.card__subtitle:not(:last-child) {
+   margin-bottom: 0.7143rem;
+}
+.card__producers:not(:last-child) {
+   margin-bottom: 0.7143rem;
+}
+.producers-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 6px;
+}
+.producers-list__item {
+}
+.producers-list__item:not(:last-child) {
+   position: relative;
+   padding-right: 6px;
+}
+.producers-list__item:not(:last-child).producers-list__item::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translate(0, -50%);
+   width: 2px;
+   height: 2px;
+   border-radius: 50%;
+   background-color: #383230;
+}
+.producers-list__link {
+   color: #383230;
+   font-size: 0.8571rem;
+   line-height: 1.6;
+}
+.card__info {
+   font-size: 0.8571rem;
+}
+.card__price {
+}
+.card__colors {
+   color: #8c8c8c;
+   text-transform: uppercase;
+}

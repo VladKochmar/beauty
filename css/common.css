@@ -1,0 +1,83 @@
+/* Основний заголовок */
+.main-title {
+   font-family: 'EB Garamond';
+   font-size: 3.4286rem;
+   line-height: 1.2;
+}
+.main-title_white {
+   color: #fff;
+}
+
+/* Звичайний заголовок */
+.title {
+   color: #383230;
+   font-family: 'EB Garamond';
+   font-size: 2rem;
+   line-height: 135.714286%;
+   letter-spacing: 0.8px;
+}
+.title_fz24 {
+   font-size: 1.7143rem;
+}
+.title_black {
+   color: #000;
+}
+
+/* Великі заголовки та тексти */
+.big-title {
+   font-family: 'EB Garamond';
+   font-size: 2.4286rem;
+   line-height: 140%;
+   letter-spacing: 2px;
+}
+
+/* Підзаголовки */
+.subtitle {
+   color: #817a70;
+   text-transform: uppercase;
+}
+
+.subtitle_fz-14 {
+   font-size: 1rem;
+}
+
+@media (min-width: 767.98px) {
+   .link-hover {
+      position: relative;
+   }
+
+   .link-hover:hover {
+      color: #000;
+   }
+
+   .link-hover::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.1429rem;
+      width: 0;
+      height: 1px;
+      background-color: #383230;
+      transition: all 0.3s ease 0s;
+   }
+
+   .link-hover:hover.link-hover::before {
+      width: 100%;
+      background-color: #000;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .big-title {
+      font-size: 1.7143rem;
+   }
+   .title {
+      font-size: 1.5714rem;
+   }
+}
+
+@media (max-width: 424.98px) {
+   .main-title {
+      font-size: 2rem;
+   }
+}
